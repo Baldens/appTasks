@@ -2,6 +2,8 @@ package denis.appmoney.Controller;
 
 import android.content.Context;
 import android.util.Log;
+import android.view.Gravity;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -31,12 +33,15 @@ public class GetData {
             }
             return builder.toString();
         } catch (FileNotFoundException e) {
+            Log.e("File", "Файл не был найден: " + e.getMessage());
         } catch (Exception e) {
+            Log.e("File", "Файл не был найден: " + e.getMessage());
         } finally {
             if (reader != null) {
                 try {
                     reader.close();
                 } catch (Exception e) {
+                    Log.e("File", "Файл не был найден: " + e.getMessage());
                 }
             }
         }
