@@ -32,6 +32,7 @@
                 android:id="@+id/addButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:text="Добавить" />
 
             <TextView
@@ -42,14 +43,21 @@
                 android:height="100dp"
                 android:text="TextView" />
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/linearLayout"
-            android:layout_width="409dp"
+            android:layout_width="203dp"
             android:layout_height="534dp"
             android:orientation="vertical">
-
-
         </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayouTwo"
+            android:layout_width="203dp"
+            android:layout_height="534dp"
+            android:layout_marginLeft="209dp"
+            android:layout_marginTop="-534dp"
+            android:orientation="vertical"></LinearLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
